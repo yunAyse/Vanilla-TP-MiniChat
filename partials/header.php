@@ -10,18 +10,19 @@
 <body>
   <header>
   <nav class="navbar" style="background-color: #ac94f4;">
+  
   <div class="container-md" id="links">
-    <a class="navbar-brand fs-1" href="#">MiniChat</a>
+    <a class="navbar-brand fs-1" href="index.php">MiniChat</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="../index.php">Home</a>
+          <a class="nav-link" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../pages/chat.php">Chat</a>
+          <a class="nav-link" href="./pages/chat.php">Chat</a>
         </li>
       </ul>
     </div>

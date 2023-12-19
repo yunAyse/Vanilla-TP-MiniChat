@@ -7,9 +7,14 @@ if (isset($_POST['pseudo']) && !empty($_POST['pseudo'])) {
 
   $sql = "SELECT pseudo FROM user WHERE pseudo = '$pseudoName'" ;
   $request = $db->query($sql);
-  $pseudo = $request->fetch();
-  print_r($pseudo);
-  gettype($pseudo);
+  $pseudos = $request->fetchAll();
+
+  foreach ($pseudos as $pseudo) {
+     session_start($pseudo);
+     var_dump($pseudo);
+  }
+ 
+ 
 
   header('Location: ../pages/chat.php');
 } else {
